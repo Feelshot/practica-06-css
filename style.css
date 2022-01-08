@@ -1,0 +1,102 @@
+:root {
+--Very-Dark-Magenta: hsl(300, 43%, 22%);
+--Soft-Pink: hsl(333, 80%, 67%);
+--Dark-Grayish-Magenta: hsl(303, 10%, 53%);
+--Light-Grayish-Magenta: hsl(300, 24%, 96%);
+--White: hsl(0, 0%, 100%);
+}
+
+body {
+    font-family: 'Spartan', sans-serif;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url(img/bg-pattern-top-mobile.svg), url(img/bg-pattern-bottom-mobile.svg);
+    background-repeat: no-repeat;
+}
+
+/* ---- Tarjeta textos header ---- */
+.container-text {
+    width: 375px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.container-text h1 {
+    width: 300px;
+    color: var(--Very-Dark-Magenta);
+}
+.container-text p {
+    width: 340px;
+    color: var(--Very-Dark-Magenta);
+    margin-bottom: 30px;
+}
+
+
+/* ---- Tarjetas estrellas ---- */
+.container-stars div{
+    background-color: var(--Light-Grayish-Magenta);
+    border-radius: 10px;
+    margin: 10px 0 15px 0;
+    width: 340px;
+    height: 95px;
+}
+.container-stars img {
+    margin-top: 20px;
+}
+.container-stars p {
+    color: var(--Very-Dark-Magenta);
+    font-weight: bold;
+}
+/* ---- Tarjetas buyers ---- */
+.tarjet-names {
+    background-color: var(--Very-Dark-Magenta);
+    border-radius: 10px;
+    width: 340px;
+    height: 270px;
+}
+.tarjet-titles {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    margin: 20px 0 20px 20px;
+}
+.tarjet-titles img {
+    border-radius: 100%;
+    width: 50px;
+    margin: 50px 25px 0 10px;
+
+}
+
+.tarjet-names h3 {
+    font-weight: bold;
+    color: var(--White);
+    margin: 50px 0 0 0;
+    font-size: 14px;
+}
+.tarjet-names h4 {
+    font-weight: lighter;
+    color: var(--Soft-Pink);
+    margin: 8px 0 0 0;
+    font-size: 15px;
+}
+.tarjet-names p {
+    color: var(--Light-Grayish-Magenta);
+    text-align: left;
+    width: 290px;
+    height: 200px;
+    margin: 0 0 20px 30px;
+    padding: 0;
+    font-size: 14px;
+    line-height: 22px;
+}
+
+/* ---- Medias Querries ---- */
+@media () {
+
+}
