@@ -14,8 +14,11 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
+    /*
     background-image: url(img/bg-pattern-top-mobile.svg), url(img/bg-pattern-bottom-mobile.svg);
     background-repeat: no-repeat;
+    background-position: right 5vw bottom 1vh, left 40vw top 45vh;
+    */
 }
 
 /* ---- Tarjeta textos header ---- */
@@ -36,12 +39,11 @@ body {
     margin-bottom: 30px;
 }
 
-
 /* ---- Tarjetas estrellas ---- */
 .container-stars div{
     background-color: var(--Light-Grayish-Magenta);
     border-radius: 10px;
-    margin: 10px 0 15px 0;
+    margin: 10px 0 15px 20px;
     width: 340px;
     height: 95px;
 }
@@ -52,6 +54,7 @@ body {
     color: var(--Very-Dark-Magenta);
     font-weight: bold;
 }
+
 /* ---- Tarjetas buyers ---- */
 .tarjet-names {
     background-color: var(--Very-Dark-Magenta);
@@ -70,9 +73,7 @@ body {
     border-radius: 100%;
     width: 50px;
     margin: 50px 25px 0 10px;
-
 }
-
 .tarjet-names h3 {
     font-weight: bold;
     color: var(--White);
@@ -97,6 +98,127 @@ body {
 }
 
 /* ---- Medias Querries ---- */
-@media () {
+@media (min-width: 1000px) {
+    body {
+        /*
+        background-image: url(img/bg-pattern-top-desktop.svg), url(img/bg-pattern-bottom-desktop.svg);
+        background-repeat: no-repeat;
+        background-position: right 5vw bottom 1vh, left 40vw top 45vh; 
+        */
+    }
 
+    /* ---- Texto header ---- */
+     .container-header {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        margin-top: 75px;
+        width: 1000px;
+        height: 300px;
+    }
+    .container-text {
+        display: flex;
+        text-align: left;
+        justify-content: left;
+        width: 500px;
+        height: 460px;
+    }
+    .container-text h1 {
+        width: 380px;
+        font-size: 38px;
+        line-height: 46px;
+        margin-bottom: 10px;
+    }
+    .container-text p {
+        width: 380px;
+        font-size: 12px;
+        line-height: 24px;
+        margin-top: 0;
+    }
+ 
+    /* ---- Estrellas ----*/
+    .container-stars div {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        width: 410px;
+        height: 50px;
+        font-size: 12px;
+    }
+    .container-stars div:nth-child(1) {
+        margin-top: 20px;
+        margin-left: 50px;
+    }
+    .container-stars div:nth-child(2) {
+        margin-left: 100px;
+    }
+    .container-stars div:nth-child(3) {
+        margin-left: 150px;
+    }
+    .container-stars img {
+        width: 17px;
+        height: 16px;
+        margin-left: 6px;
+        margin-top: 18px;
+    }
+    .container-stars img:nth-child(1) {
+        margin-left: 30px;
+    }
+    .container-stars p {
+        margin-left: 30px;
+        margin-top: 20px;
+    }
+
+    /* ---- Tarjetas nombres ----*/
+    .tarjet-container {
+        display: flex;
+        flex-direction: row;
+    }
+    .tarjet-names {
+        background-color: var(--Very-Dark-Magenta);
+        border-radius: 10px;
+        width: 340px;
+        height: 220px;
+        margin-left: 20px;
+    }
+    .tarjet-two {
+        margin-top: 20px;
+    }
+    .tarjet-three {
+        margin-top: 40px;
+    }
+    .tarjet-titles {
+        display: flex;
+        align-items: center;
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+        margin: 10px 0 20px 20px;
+    }
+    .tarjet-titles img {
+        border-radius: 100%;
+        width: 50px;
+        margin: 10px 25px 0 10px;
+    }
+    .tarjet-names h3 {
+        font-weight: bold;
+        color: var(--White);
+        margin: 10px 0 0 0;
+        font-size: 14px;
+    }
+    .tarjet-names h4 {
+        font-weight: lighter;
+        color: var(--Soft-Pink);
+        margin: 8px 0 0 0;
+        font-size: 15px;
+    }
+    .tarjet-names p {
+        color: var(--Light-Grayish-Magenta);
+        text-align: left;
+        width: 270px;
+        height: 200px;
+        margin: 0 0 20px 30px;
+        padding: 0;
+        font-size: 12px;
+        line-height: 22px;
+    }
 }
